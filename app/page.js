@@ -1,4 +1,6 @@
+/* eslint-disable react/no-unescaped-entities */
 import Head from 'next/head';
+import Image from 'next/image';
 
 const Home = () => {
   return (
@@ -19,7 +21,12 @@ const Home = () => {
 
         {/* Floating Logo */}
         <div className="absolute top-4 left-4 z-10">
-          <img src="logo.png" alt="Logo" className="w-12 h-12" />
+          <Image
+            src="/logo.png"
+            alt="Logo"
+            width={48}
+            height={48}
+          />
         </div>
       </div>
 
