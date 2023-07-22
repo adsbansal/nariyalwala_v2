@@ -1,6 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
+
 
 const Home = () => {
   return (
@@ -47,9 +49,11 @@ const Home = () => {
           </div>
         </div>
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-          <button className="bg-blue-600 hover:bg-blue-700 text-white text-sm sm:text-lg py-2 px-10 sm:py-4 sm:px-24 rounded-xl sm:rounded-2xl">
-            Subscribe Now
-          </button>
+          <Link href="/form">
+            <button className="bg-blue-600 hover:bg-blue-700 text-white text-sm sm:text-lg py-2 px-10 sm:py-4 sm:px-24 rounded-xl sm:rounded-2xl">
+              Subscribe Now
+            </button>
+          </Link>
         </div>
       </div>
     </div>
